@@ -1,3 +1,3 @@
 python db_script
 scrapy crawl numbeo
-web: gunicorn app:api_numbeo
+web: gunicorn api_numbeo:app
