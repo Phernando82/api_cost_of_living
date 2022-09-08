@@ -1,42 +1,69 @@
-## Título 
+## Title
 
 <h1 align="center"> Unofficial Numbeo API </h1>
 
-## Índice 
+## Index
 
-* [Título](#título)
-* [Índice](#índice)
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-projeto)
-* [Funcionalidades do Projeto](#funcionalidades-do-projeto)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras-do-projeto)
+* [Title](#title)
+* [Index](#index)
+* [Project Description](#project-description)
+* [Project Status](#project-status)
+* [Project Features](#project-features)
+* [Project Access](#project-access)
+* [Technologies used](#technologies-used)
+* [People-Developers of the Project](#people-developers-of-the-project)
 
-## Descrição do Projeto
+## Project Description
 
-API não oficial Numbeo para acessar informações do custo de vida nas cidades disponíveis nesta página
+This project uses the Scrapy framework to web crawl the Numbeo page and extract the following information as an example:
 
-## Status do Projeto
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+`Meal, Inexpensive Restaurant`	
 
-## Funcionalidades do Projeto
+`Meal for 2 People, Mid-range Restaurant, Three-course`
 
-- `Web Scraping`: varre as informações de custos da cidade pesquisada
-- `Armazenamento`: salva as informações em banco de dados
-- `Flask API`: disponibiliza as informações em arquivo JSON
+`One-way Ticket (Local Transport)`
 
-## Acesso ao Projeto
+`Monthly Pass (Regular Price)`
 
-- `Github`: faça um fork do projeto
-- `Dependências`: instale as dependências do arquivo requirements.txt
-- `Banco de dados`: execute o script db_script.py para gerar o banco de dados
-- `Varrer a página`: set o valor da variável city e execute o comando scrapy crawl numbeo
-- `API em serviço`: execute o arquivo api_numbeo.py para deixar em serviço 
-- `Autorização`: por meio da URL padrão primeiro gere o token url_padrão/login e set a variável x-access-token
-- `Obter dados`: por meio da URL padrão primeiro selecione o endpoint: /city e então o verbo http GET
+`Gasoline (1 liter)`
 
-## Tecnologias utilizadas
+`Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment`
+
+`Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)`	
+
+`Apartment (1 bedroom) in City Centre`
+
+`Apartment (1 bedroom) Outside of Centre`
+
+`Apartment (3 bedrooms) in City Centre`
+
+`Apartment (3 bedrooms) Outside of Centre`
+
+`Average Monthly Net Salary (After Tax)`
+
+The information is saved in a SQLite database and can be retrieved for direct query to the database. Using Flask, routes are created to provide information in JSON format through URLs, thus generating an API that can be consumed to search for this information. This project was hosted on Heroku in order to provide a continuously integrated server, since it is possible to run Scrapy, update the information and then deploy.
+
+
+## Project Status
+![Badge under development](http://img.shields.io/static/v1?label=STATUS&message=UNDER%20DEVELOPMENT&color=GREEN&style=for-the-badge)
+
+## Project Features
+
+- `Web Scraping`: scans the searched city cost information
+- `Storage`: save information in database
+- `Flask API`: provides information in JSON file
+
+## Project Access
+
+- `Github`: fork the project
+- `Dependencies`: install dependencies from requirements.txt file
+- `Database`: run the db_script.py script to generate the database
+- `Scan the page`: set the value of the city variable and run the scrapy crawl numbeo command
+- `API in service`: run api_numbeo.py file to leave in service
+- `Authorization`: via the default url first generate the default_url/login token and set the x-access-token variable
+- `Get data`: via the standard url first select the endpoint: /city and then the http verb GET
+
+## Technologies used
 
 
   <img align="center" alt="Fer-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">- `Python`
@@ -51,7 +78,7 @@ API não oficial Numbeo para acessar informações do custo de vida nas cidades 
   
   <img align="center" alt="Fer-Sql" height="30" width="40"   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" /> - `SQLite`
 
-## Pessoas desenvolvedoras do Projeto
+## People-Developers of the Project
 [<img src="https://github.com/Phernando82.png?size=460" width=115><br><sub>Phernando82</sub>](https://https://github.com/Phernando82) 
 ##
 ![Github Issues:](https://img.shields.io/github/issues/Phernando82/api_cost_of_living)
