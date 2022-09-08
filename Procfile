@@ -1,2 +1,2 @@
-python db_script
-web: gunicorn app:app
+python db_script.py
+web: gunicorn app:api_numbeo
