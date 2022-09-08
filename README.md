@@ -79,7 +79,7 @@ The information is saved in a SQLite database and can be retrieved for direct qu
   <img align="center" alt="Fer-Sql" height="30" width="40"   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" /> - `SQLite`
 
 ## People-Developers of the Project
-[<img src="https://github.com/Phernando82.png?size=460" width=115><br><sub>Phernando82</sub>](https://https://github.com/Phernando82) 
+[<img src="https://github.com/Phernando82.png?size=460" width=115><br><sub>Phernando82</sub>](https://github.com/Phernando82) 
 ##
 ![Github Issues:](https://img.shields.io/github/issues/Phernando82/api_cost_of_living)
 ![Github Forks:](https://img.shields.io/github/forks/Phernando82/api_cost_of_living)
