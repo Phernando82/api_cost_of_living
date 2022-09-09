@@ -6,8 +6,9 @@ class NumbeoSpider(scrapy.Spider):
     # request
     def start_requests(self):
         # Definir as urls para varrer
-        city = 'Helsinki'
-        urls = [f'https://www.numbeo.com/cost-of-living/in/{city}']
+        city = 'Rio-De-Janeiro'
+        currency = 'EUR'
+        urls = [f'https://www.numbeo.com/cost-of-living/in/{city}?displayCurrency={currency}']
 
         for url in urls:
             yield scrapy.Request(url=url,callback=self.parse)
