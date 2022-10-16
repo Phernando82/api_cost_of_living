@@ -43,6 +43,10 @@ This project uses the Scrapy framework to web crawl the Numbeo page and extract 
 
 The information is saved in a SQLite database and can be retrieved for direct query to the database. Using Flask, routes are created to provide information in JSON format through URLs, thus generating an API that can be consumed to search for this information. This project was hosted on Heroku in order to provide a continuously integrated server, since it is possible to run Scrapy, update the information and then deploy.
 
+## Utility
+
+Used in projects that need information about the cost of living in a given city.
+
 
 ## Project Status
 ![Badge under development](http://img.shields.io/static/v1?label=STATUS&message=UNDER%20DEVELOPMENT&color=GREEN&style=for-the-badge)
